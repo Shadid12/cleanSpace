@@ -1,0 +1,7 @@
+<% if user_signed_in? %>
+    <%= form_for(@hosting) do |h| %>
+        <%= h.text_field :title, placeholder: "give it a title!!!" %><br>
+        <%= h.text_area :description, placeholder: "Compose new Hosting..." %>
+        <%= h.submit "post" %>
+    <% end %>
+<% end %>

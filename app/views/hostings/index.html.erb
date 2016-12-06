@@ -1,0 +1,8 @@
+<h1>PLACES THAT NEEDS CLEANING </h1>
+
+<% @hostings.each do |hosting| %>
+    title: <%= hosting.title %> <br>
+    description: <%= hosting.description %> <br>
+    Posted by : <%= hosting.user.email %> <br>
+    created_at : <%= hosting.created_at %> <br>
+<% end %>
